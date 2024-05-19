@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  *
- * Description: Assign a random number to the variable n each time it is executed
+ * Description: Assign random number to the variable n each time it is executed
  *
  * Return:  (Success)
  */
