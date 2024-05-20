@@ -14,10 +14,19 @@ int main(void)
 
 	for (n = 0; n <= 15; n++)
 	{
-		printf("%x", n);
+		if (n < 10)
+		{
+			
+			putchar(n + '0');
+		}
+		else
+		{
+
+			putchar(n - 10 + 'a');
+		}
 	}
 
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
