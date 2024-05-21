@@ -8,4 +8,7 @@ void print_alphabet_x10(void);
 /* Function declaration for print_alphabet_x10 */
 
 int _islower(int c);
-/* Function declaration for int _islower */
+/* Function declaration for _islower */
+
+int _isalpha(int c);
+/* Function declaration for _isalpha */
