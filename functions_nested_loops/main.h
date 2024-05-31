@@ -15,3 +15,6 @@ int _isalpha(int c);
 
 int print_sign(int n);
 /* Function declaration for print_sign */
+
+int _abs(int n);
+/* Function declaration for _abs */
