@@ -18,3 +18,6 @@ int print_sign(int n);
 
 int _abs(int n);
 /* Function declaration for _abs */
+
+int print_last_digit(int);
+/* Function declaration for print_last_digit */
