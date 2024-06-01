@@ -26,3 +26,6 @@ void jack_bauer(void);
 /* Function declaration for jack_bauer */
 /* Function does not take any arguments, void */
 /* Function does not return any value, (void) */
+
+void times_table(void);
+/* Function declaration for times_table */
