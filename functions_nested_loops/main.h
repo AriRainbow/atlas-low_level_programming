@@ -32,3 +32,6 @@ void times_table(void);
 
 int add(int, int);
 /* Function declaration for add */
+
+void print_to_98(int n);
+/* Function declaration for print_to_98 */
