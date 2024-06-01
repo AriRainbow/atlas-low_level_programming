@@ -29,3 +29,6 @@ void jack_bauer(void);
 
 void times_table(void);
 /* Function declaration for times_table */
+
+int add(int, int);
+/* Function declaration for add */
