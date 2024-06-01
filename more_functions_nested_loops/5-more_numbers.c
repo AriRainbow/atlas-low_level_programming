@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * more_numbers - Function prints numbers 0 to 14 ten times, followed by new line
+ * more_numbers - Function prints numbers 0 to 14 ten times,
+ * followed by new line
  */
 
 void more_numbers(void)
@@ -17,7 +18,7 @@ void more_numbers(void)
 				_putchar((m / 10) + '0');
 			}
 
-			_putchar((m % 10) + '0');	
+			_putchar((m % 10) + '0');
 		}
 
 		_putchar('\n');
