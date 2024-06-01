@@ -21,3 +21,8 @@ int _abs(int n);
 
 int print_last_digit(int);
 /* Function declaration for print_last_digit */
+
+void jack_bauer(void);
+/* Function declaration for jack_bauer */
+/* Function does not take any arguments, void */
+/* Function does not return any value, (void) */
