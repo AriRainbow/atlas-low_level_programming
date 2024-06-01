@@ -24,8 +24,8 @@ int print_last_digit(int);
 
 void jack_bauer(void);
 /* Function declaration for jack_bauer */
-/* Function does not take any arguments, void */
-/* Function does not return any value, (void) */
+/* Function does not take any arguments */
+/* Function does not return any value */
 
 void times_table(void);
 /* Function declaration for times_table */
