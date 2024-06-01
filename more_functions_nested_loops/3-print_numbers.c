@@ -2,7 +2,6 @@
 
 /**
  * print_numbers - Function prints numbers 0 to 9, followed by new line
- * @n: Character to check
  */
 
 void print_numbers(void)
