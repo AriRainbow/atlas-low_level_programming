@@ -16,4 +16,16 @@ void print_triangle(int size)
 		_putchar('\n');
 		return;
 	}
+
+	for (x = 1; x <= size; x++) /* controls number of lines */
+	{
+		for (y = 0; y < size - x; y++) /* print spaces before hash */
+		{
+			_putchar(' ');
+		}
+		for (z = 0; z < x; z++) /* print hash */
+		{
+			_putchar('#');
+		}
+	}
 }
