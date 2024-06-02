@@ -3,7 +3,11 @@
 /**
  * main - Point of entry
  *
- * Return - always 0 (success)
+ * Description: Prints numbers from 1 to 100, replaces multiples
+ * of 3 with "Fizz", multiples of 5 with "Buzz", and multiples 
+ * of both with "FizzBuzz"
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
