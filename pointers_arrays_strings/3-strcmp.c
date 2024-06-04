@@ -6,7 +6,7 @@
  * @s1: Pointer to first string
  * @s2: Pointer to second string
  *
- * Description: 
+ * Description:
  *
  * Return: If s1 < s2 returns negative int,
  * if s1 = s2 returns zero, if s1 > s2 returns positive int
