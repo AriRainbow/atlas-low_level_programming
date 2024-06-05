@@ -7,7 +7,7 @@
  *
  * @str: String to print
  *
- * Description: Starts at first char, followed by new line. 
+ * Description: Starts at first char, followed by new line.
  * Uses 'write' system call to print to std output.
  *
  */
