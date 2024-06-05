@@ -5,7 +5,7 @@
  *
  * @s: String to be reversed
  *
- * Description: First calculates length, then swaps characters 
+ * Description: First calculates length, then swaps characters
  * from beginning and end moving towards center.
  *
  */
