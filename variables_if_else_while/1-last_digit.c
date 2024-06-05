@@ -7,7 +7,7 @@
  *
  * main - Entry point
  *
- * Description:
+ * Description: Generates random number and prints last digit
  *
  * Return: Always 0 (success)
  */

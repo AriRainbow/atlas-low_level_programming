@@ -6,7 +6,7 @@
  * @a: Pointer to first integer
  * @b: Pointer to second integer
  *
- * Description: Function uses a temporary variable to hold one 
+ * Description: Function uses a temporary variable to hold one
  * of the values during swap
  *
  */
