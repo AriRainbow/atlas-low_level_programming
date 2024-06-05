@@ -1,28 +1,33 @@
 #include "main.h"
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * puts2 - Function prints every other character
  *
- * @str: String to iterate
+ * @str: String to print
  *
- * Description: Starts at first char, followed by new line
+ * Description: Starts at first char, followed by new line. 
+ * Uses 'write' system call to print to std output.
  *
  */
 
 void puts2(char *str)
 {
-	int n; /* loop counter */
+	int n = 0; /* loop counter */
 
-	/* iterate string */
-	for (n = 0; str[n] != '\0'; n++) /* loop until end */
+	/* check input string and current char are not NULL */
+	while (str && str[n])
 	{
-		if (n % 2 == 0) /* check if index even */
+		/* check index is even */
+		if (n % 2 == 0)
 		{
-			/* %c single character */
-			printf("%c", str[n]); /* print current even index */
+			/* print char to std output using 'write' */
+			write(1, &str[n], 1);
 		}
+		n++;
 	}
 
-	printf("\n"); /* new line */
+	/* 'write' new line */
+	write(1, "\n", 1);
 }
