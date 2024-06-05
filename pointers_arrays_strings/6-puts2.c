@@ -19,9 +19,10 @@ void puts2(char *str)
 	{
 		if (n % 2 == 0) /* check if index even */
 		{
-			putchar(str[n]); /* print current even index */
+			/* %c single character */
+			printf("%c", str[n]); /* print current even index */
 		}
 	}
 
-	putchar('\n'); /* new line */
+	printf("\n"); /* new line */
 }
