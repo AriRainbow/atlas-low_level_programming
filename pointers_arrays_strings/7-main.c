@@ -7,6 +7,10 @@
  */
 int main(void)
 {
+	char *str_regular = "Holberton!";
+        char *str_long = "Lorem ipsum...";
+        char *str_empty = "";
+
     char *str;
 
     str = "0123456789";
