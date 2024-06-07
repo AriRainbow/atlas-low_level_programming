@@ -14,7 +14,7 @@
 
 int _atoi(char *s)
 {
-	int sign = 1 /* initialize sign, positive (-1, neg) */
+	int sign = 1; /* initialize sign, positive (-1, neg) */
 	int result = 0; /* initialize result */
 	int digit = *s - '0'; 
 
