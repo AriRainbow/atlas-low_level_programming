@@ -15,5 +15,17 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	n
+	char *ptr = dest; /* point to same location as dest */
+
+	/* copy src to dest */
+	while (*src != '\0')
+	{
+		*dest = *src; /* copy src to dest */
+		dest++; /* next */
+		src++; /* next */
+	}
+
+	*dest = '\0'; /* append null terminator */
+
+	return (ptr); /* return to beginning of dest */
 }
