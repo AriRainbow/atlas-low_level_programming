@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * puts_half - Function prints half a string, followed by new line.
@@ -36,8 +37,8 @@ void puts_half(char *str)
 	/* print 2nd half */
 	for (n = second_half; n < length; n++)
 	{
-		putchar(str[n]); /* prints character at current index */
+		write(1, &str[n], 1); /* current index to std output */
 	}
 
-	putchar('\n');
+	write(1, "\n", 1);
 }
