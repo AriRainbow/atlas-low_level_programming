@@ -23,5 +23,12 @@ void puts_half(char *str)
 	}
 
 	/* find starting point of 2nd half */
-	if
+	if (length % 2 == 0)
+	{
+		second_half = length / 2; /* even length */
+	}
+	else
+	{
+		second_half = (length -1) / 2; /* odd length */
+	}
 }
