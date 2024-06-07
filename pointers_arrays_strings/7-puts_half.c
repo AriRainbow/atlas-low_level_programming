@@ -3,11 +3,25 @@
 /**
  * puts_half - Function prints half a string, followed by new line.
  *
- * Description:
+ * @str: Input string
+ *
+ * Description: If number of characters is odd, fuction 
+ * should print last half plus middle character.
  *
  */
 
 void puts_half(char *str)
 {
-	n
+	int length = 0; /* variable stores length */
+	int n; /* counter */
+	int second_half; /* start index for print 2nd half */
+
+	/* calculate length of string */
+	while (str[length] != '\0')
+	{
+		length++;
+	}
+
+	/* find starting point of 2nd half */
+	if
 }
