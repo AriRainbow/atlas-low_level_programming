@@ -5,7 +5,7 @@
  *
  * @s: string to be printed
  *
- * Description: 
+ * Description:
  *
  */
 
