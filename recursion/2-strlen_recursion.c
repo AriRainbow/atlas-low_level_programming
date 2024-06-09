@@ -5,8 +5,9 @@
  *
  * @s: string
  *
- * Description:
+ * Description: Counts number of characters recursively
  *
+ * Return: Length of string
  */
 
 int _strlen_recursion(char *s)
