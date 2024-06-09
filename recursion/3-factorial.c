@@ -26,6 +26,6 @@ int factorial(int n)
 
 	else
 	{
-		return n * factorial(n - 1); /* recursive case */
+		return (n * factorial(n - 1)); /* recursive case */
 	}
 }
