@@ -27,7 +27,7 @@ int is_prime_number(int n)
  * @n: Number to check if prime
  * @i: Current divisor to test
  *
- * Description: Helper function for is_prime_number. Checks if 
+ * Description: Helper function for is_prime_number. Checks if
  * n is divisible by any number from 2 to sqrt of n.
  *
  * Return: 1 if prime, 0 otherwise
