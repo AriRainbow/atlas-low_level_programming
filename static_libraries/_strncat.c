@@ -2,5 +2,8 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	return (0);
+	(void)dest;
+	(void)src;
+	(void)n;
+	return (dest);
 }

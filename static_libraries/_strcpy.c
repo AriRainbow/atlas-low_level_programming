@@ -2,5 +2,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	return (0);
+	(void)dest;
+	(void)src;
+	return (dest);
 }
