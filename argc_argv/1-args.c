@@ -12,5 +12,10 @@
 
 int main(int argc, char *argv[])
 {
+	(void)argv; /* mark argv unused */
+
+	printf("%d\n", argc - 1); /* %d print int */
+	/* argc - 1 excludes program name */
+
 	return (0);
 }
