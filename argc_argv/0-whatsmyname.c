@@ -12,5 +12,9 @@
 
 int main (int argc, char *argv[])
 {
+	(void)argc; /* mark argc as unused */
+
+	printf("%s\n", argv[0]); /* %s print string, argv[0] prog name */
+
 	return (0);
 }
