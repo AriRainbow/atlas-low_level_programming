@@ -20,5 +20,10 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
+	product = atoi(argv[1]) * atoi(argv[2]);
+	/* convert argv to integer and multiply */
+
+	printf("%d\n", product); /* %d integer */
+
 	return (0);
 }
