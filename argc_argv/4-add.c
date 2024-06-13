@@ -7,7 +7,9 @@
  * @argc: Argument counter
  * @argv: Argument vector
  *
- * Return: Sum of two numbers 0 (success), otherwise 1 (error)
+ * Description: If no number, print 0 followed by new line.
+ *
+ * Return: Sum positive numbers 0 (success), otherwise 1 (error)
  *
  */
 
