@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - Entry point
@@ -24,7 +25,13 @@ int main(int argc, char *argv[])
 		for (b = 0; argv[a][b] != '\0'; b++)
 			/* inner loop, each character */
 		{
-			if()
+			if(!isdigit(argv[a][b])) /* if != digit */
+				/* isdigit <ctype.h> */
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
 	}
 	return (0);
 }
