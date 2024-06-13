@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		for (b = 0; argv[a][b] != '\0'; b++)
 			/* inner loop, each character */
 		{
-			if(!isdigit(argv[a][b])) /* if != digit */
+			if (!isdigit(argv[a][b])) /* if != digit */
 				/* isdigit <ctype.h> */
 			{
 				printf("Error\n");
