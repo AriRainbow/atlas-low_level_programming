@@ -32,6 +32,11 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
+
+		sum += atoi(argv[a]); /* convert and add to sum */
 	}
+
+	printf("%d\n", sum);
+
 	return (0);
 }
