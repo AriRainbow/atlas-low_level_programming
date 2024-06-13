@@ -17,7 +17,7 @@
 
 int main(int argc, char *argv[])
 {
-	int sum;
+	int sum = 0; /* must have starting value */
 	int a, b;
 
 	for (a = 1; a < argc; a++) /* outer loop, each argument */
@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
 		}
 
 		sum += atoi(argv[a]); /* convert and add to sum */
+		/* sum must have starting value */
 	}
 
 	printf("%d\n", sum);
