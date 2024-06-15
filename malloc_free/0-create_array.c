@@ -23,4 +23,17 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
+
+	array = malloc(size * sizeof(char));
+	/* calculates total mem required for size (num of char) */
+
+	if (array == NULL) /* unable to allocate, fails */
+		return (NULL);
+
+	for (n = 0; n < size; n++)
+	{
+		array[n] = c; /* initialize */
+	}
+
+	return array;
 }
