@@ -2,13 +2,13 @@
 #include <stdlib.h>
 
 /**
- * create_array - Function creates array of char, and 
+ * create_array - Function creates array of char, and
  * initializes with specific char
  *
  * @size: Size of array
  * @c: Char to initialize
  *
- * Return: NULL if size is 0 or if fails, otherwise 
+ * Return: NULL if size is 0 or if fails, otherwise
  * returns pointer to the array
  *
  */
@@ -35,5 +35,5 @@ char *create_array(unsigned int size, char c)
 		array[n] = c; /* initialize */
 	}
 
-	return array;
+	return (array);
 }
