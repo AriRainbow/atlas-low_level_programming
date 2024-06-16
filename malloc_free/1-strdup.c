@@ -2,12 +2,13 @@
 #include <stdlib.h>
 
 /**
- * _strdup - Function returns a poitner to a new string which is a duplicate of the string str
+ * _strdup - Function returns a poitner to a new string,
+ * which is duplicate of input string
  *
  * @str: String to duplicate
  *
  * Return: NULL if str is NULL or insufficient memory, otherwise
- * returns pointer to dup string 
+ * returns pointer to dup string
  *
  */
 
@@ -27,7 +28,7 @@ char *_strdup(char *str)
 	dup_str = malloc((length + 1) * sizeof(char));
 	/* lenght + 1 for NULL terminator */
 	if (dup_str == NULL) /* insufficient mem */
-		return NULL;
+		return (NULL);
 
 	for (n = 0; n <= length; n++)
 		dup_str[n] = str[n]; /* copy string */
