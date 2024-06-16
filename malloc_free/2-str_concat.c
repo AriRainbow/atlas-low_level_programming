@@ -16,7 +16,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *concat_str;
-	unsigned int len_s1, len_s2; /* do I need entry point? */
+	unsigned int len_s1 = 0;
+	unsigned int len_s2 = 0; /* string lengths */
 	unsigned int a; /* counter */
 	unsigned int b; /* counter */
 
