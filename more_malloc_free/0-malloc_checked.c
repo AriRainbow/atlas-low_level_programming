@@ -9,7 +9,7 @@
  * Description:
  *
  * Return: Pointer to allocated memory. If fails, function
- * should cause normal process termination with a 
+ * should cause normal process termination with a
  * status value of 98.
  *
  */
