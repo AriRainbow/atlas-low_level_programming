@@ -5,7 +5,7 @@
  * free_grid - Fuction frees previously created 2
  * dimensional grid
  *
- * @grid: Grid to be freed 
+ * @grid: Grid to be freed
  * @height: nHeight of grid
  *
  * Description:
