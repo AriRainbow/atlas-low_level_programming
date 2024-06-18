@@ -8,11 +8,11 @@
  * @s2: Second string
  * @n: Number of bytes s2
  *
- * Description: If n >= s2, use entire string 
+ * Description: If n >= s2, use entire string
  * If NULL is passed, treat as empty string
  *
- * Return: NULL if fails, otherwise pointer to new alloc 
- * space in mem containing s1 followed by first n bytes 
+ * Return: NULL if fails, otherwise pointer to new alloc
+ * space in mem containing s1 followed by first n bytes
  * of s2 and null terminated
  *
  */
