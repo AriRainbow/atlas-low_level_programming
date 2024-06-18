@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: Prints name of file it was compiled from 
+ * Description: Prints name of file it was compiled from
  *
  * Return: Always 0 (success)
  *
