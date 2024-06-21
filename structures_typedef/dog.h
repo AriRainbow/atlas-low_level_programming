@@ -17,4 +17,7 @@ struct dog
 	char *owner;
 };
 
+void init_dog(struct dog *d, char *name, float age, char *owner);
+/* ptr allows the func to modify original struct dog instead of copy */
+
 #endif
