@@ -11,7 +11,7 @@
  * Description: -> Operator used to access members of structure
  * through a pointer. Shorthand for dereferencing pointer
  * to structure, then accessing a member of that structure.
- * If do not use ->, dereference pointer, then use (.) operator. 
+ * If do not use ->, dereference pointer, then use (.) operator.
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
