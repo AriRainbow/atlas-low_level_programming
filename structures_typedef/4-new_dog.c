@@ -45,7 +45,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	/* copy name string to allocated memory */
 	for (n = 0; n < name_len; n++)
-	       new_dog->name[n] = name[n];	
+	       new_dog->name[n] = name[n];
 
 	/* allocate mem for owner string in new dog struct */
 	new_dog->owner = malloc(sizeof(char) * (owner_len));
