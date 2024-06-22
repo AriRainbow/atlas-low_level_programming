@@ -18,39 +18,50 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
-	char *name_copy;
-	char *owner_copy;
+	int name_len = 0;
+	int owner_len = 0;
+	int n; /* counter */
+
+	/* calc length of name string */
+	while (name[name_len++])
+		;
+
+	/* calc length of owner string */
+	while (owner[owner_len++])
+		;
 
 	/* allocate mem for dog struct */
 	new_dog = malloc(sizeof(dog_t));
 	if (new_dog == NULL)
 		return (NULL);
 
-	/* allocate mem and copy name */
-	name_copy = malloc(strlen(name) + 1);
-	if (name_copy == NULL)
+	/* allocate mem for name string in new dog struct */
+	new_dog->name = malloc(sizeof(char) * (name_len));
+	if (new_dog->name == NULL)
 	{
 		free(new_dog);
 		return (NULL);
 	}
 
-	strcpy(name_copy, name);
+	/* copy name string to allocated memory */
+	for (n = 0; n < name_len; n++)
+	       new_dog->name[n] = name[n];	
 
-	/* allocate mem and copy owner */
-	owner_copy = malloc(strlen(owner) + 1);
-	if (owner_copy == NULL)
+	/* allocate mem for owner string in new dog struct */
+	new_dog->owner = malloc(sizeof(char) * (owner_len));
+	if (new_dog->owner == NULL)
 	{
-		free(name_copy);
+		free(new_dog->name);
 		free(new_dog);
 		return (NULL);
 	}
 
-	strcpy(owner_copy, owner);
+	/* copy owner string to allocated memory */
+	for (n = 0; n < owner_len; n++)
+		new_dog->owner[n] = owner[n];
 
-	/* set dog attributes */
-	new_dog->name = name_copy;
+	/* set age of new dog */
 	new_dog->age = age;
-	new_dog->owner = owner_copy;
 
 	return (new_dog);
 }
