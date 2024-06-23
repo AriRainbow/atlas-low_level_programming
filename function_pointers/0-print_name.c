@@ -7,7 +7,7 @@
  * @f: Pointer to function used for printing the name
  *
  * Description: Function takes a name and a function pointer
- * as arguments, and calls the function pointer with the 
+ * as arguments, and calls the function pointer with the
  * name as its argument.
  *
  */
