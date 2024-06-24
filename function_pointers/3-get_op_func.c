@@ -36,7 +36,7 @@ int (*get_op_func(char *s))(int, int)
 	    /* checks if first character of string matches */
 	    /* checks if operator string has only one character */
 	    /* this avoids partial matches */
-		   return (ops[i].f; /* function pointer, match found */
+		   return (ops[i].f); /* function pointer, match found */
 	    i++;
     }
 
