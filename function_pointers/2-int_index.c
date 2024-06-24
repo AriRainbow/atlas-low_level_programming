@@ -9,8 +9,8 @@
  *
  * Description: What does a returned index look like?
  *
- * Return: Index of the first element for which the cmp 
- * function does not return 0. Return -1 if no element 
+ * Return: Index of the first element for which the cmp
+ * function does not return 0. Return -1 if no element
  * matches or if size <= 0
  *
  */
