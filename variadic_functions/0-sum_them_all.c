@@ -15,7 +15,7 @@ int sum_them_all(const unsigned int n, ...)
 {
 	va_list args; /* holds list of arguments */
 	unsigned int i; /* counter */
-	int sum = 0; 
+	int sum = 0;
 
 	/* check if number of arguments is zero */
 	if (n == 0)
@@ -31,5 +31,5 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_end(args); /* clean up va_list */
 
-	return(sum);
+	return (sum);
 }
