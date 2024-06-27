@@ -57,7 +57,7 @@ void print_all(const char * const format, ...)
 			case 's':
 				str = va_arg(args, char *);
 				flag = 1;
-				if (!str) /* if str NULL */
+				if (!str)
 				{
 					printf("(nil)");
 					break;
@@ -66,7 +66,6 @@ void print_all(const char * const format, ...)
 				break;
 		}
 
-		separator = ","; /* update to , */
 		i++;
 	}
 
