@@ -5,7 +5,7 @@
  * @h: Pointer to head of list.
  *
  * Description:
- * Return: Number of elements in the list 
+ * Return: Number of elements in the list
  */
 size_t list_len(const list_t *h)
 {
@@ -17,5 +17,5 @@ size_t list_len(const list_t *h)
 		node_count++; /* counter */
 	}
 
-	return node_count; /* total number of nodes */
+	return (node_count); /* total number of nodes */
 }
