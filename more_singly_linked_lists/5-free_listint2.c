@@ -23,7 +23,7 @@ void free_listint2(listint_t **head)
 }
 
 /**
- * Description: (*head)->next dereferences pointer to the node 
+ * Description: (*head)->next dereferences pointer to the node
  * before accessing next member
  * *head->next interpreted as head->next, accesses next member
  * of head pointer itself
