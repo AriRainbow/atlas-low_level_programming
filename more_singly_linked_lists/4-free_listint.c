@@ -13,6 +13,6 @@ void free_listint(listint_t *head)
 	{
 		temp = head; /* save current node */
 		head = head->next; /* move to next node */
-		free (temp); /* free current node */
+		free(temp); /* free current node */
 	}
 }
