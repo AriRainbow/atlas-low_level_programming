@@ -7,7 +7,6 @@
  * @head: Double pointer to the head of the list
  * @str: String to be added to new node
  *
- * Description:
  * Return: Address of new element, or NULL if failed
  */
 list_t *add_node_end(list_t **head, const char *str)
@@ -21,7 +20,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_str = strdup(str);
 	if (new_str == NULL)
 		return (NULL);
-
 	/* calculate length of new string */
 	while (str[len])
 		len++;
@@ -33,7 +31,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		free(new_str);
 		return (NULL);
 	}
-
 	/* set the new node's values */
 	new_node->str = new_str;
 	new_node->len = len;
