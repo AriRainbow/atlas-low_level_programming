@@ -31,14 +31,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 
 	/* traverse to node before insertion point */
-	while (current_node && count < idx -1)
+	while (current_node && count < idx - 1)
 	{
 		current_node = current_node->next;
 		count++;
 	}
 
 	/* if reach end or index out of range */
-	if (!current_node || count != idx -1)
+	if (!current_node || count != idx - 1)
 	{
 		free(new_node); /* free allocated memory */
 		return (NULL);
