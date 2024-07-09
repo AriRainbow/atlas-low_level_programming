@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * flip_bits - Returns the number of bits needed to flip to get 
+ * flip_bits - Returns the number of bits needed to flip to get
  * from one number to another
  * @n: First unsigned long int
  * @m: Second unsigned long int
