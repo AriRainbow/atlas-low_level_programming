@@ -33,7 +33,7 @@ void print_binary(unsigned long int n)
 }
 
 /**
- * Description: My Notes
+ * Description:
  * Mask initialization sets up mask to check each bit from most significant
  * bit (MSB) to least significant bit (LSB) without using arrays, malloc,
  * %, or / operators. Initializes with single bit set to 1 at MSB position.
