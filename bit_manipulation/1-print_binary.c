@@ -33,16 +33,19 @@ void print_binary(unsigned long int n)
 }
 
 /**
- * Description:
- * Mask initialization sets up mask to check each bit from most significant
- * bit (MSB) to least significant bit (LSB) without using arrays, malloc,
- * %, or / operators. Initializes with single bit set to 1 at MSB position.
- * '(sizeof(unsigned long int) * 8' gives total num bits in unsigned long int
- * Typically 64 bits
- * '1UL << (sizeof(unsigned long int) * 8 - 1)' shifts number 1 left by
- * '(total bits - 1)' positions, setting the MSB
- * 8 bits in a byte
- * 'sizeof' returns bytes
- * 1UL ensures bit shift operates on 64-bit value, full range of
- * 'unsigned long int'
+ * Description: Mask initialization sets up mask to check each bit
+ * 		from most significant bit (MSB) to least significant
+ * 		bit (LSB) without using arrays, malloc, %, or / operators.
+ * 		Initializes with single bit set to 1 at MSB position.
+ * 		
+ * 		'(sizeof(unsigned long int) * 8' gives total num bits
+ * 		in unsigned long int (typically 64 bits).
+ * 
+ * 		'1UL << (sizeof(unsigned long int) * 8 - 1)' shifts
+ * 		number 1 left by '(total bits - 1)' positions, setting the MSB.
+ * 		
+ * 		8 bits in a byte.
+ * 		'sizeof' returns bytes.
+ * 		1UL ensures bit shift operates on 64-bit value, full range of
+ * 		'unsigned long int'.
  */
