@@ -14,27 +14,29 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd = -1, write_status = -1, close_status = -1;
+	int fd, write_status, close_status;
 	size_t text_length = 0;
 
 	if (filename == NULL)
 		return (-1);
 
-	if (text_content != NULL)
-	{
-		/* get length of text_content string */
-		text_length = strlen(text_content);
+	if (text_content == NULL)
+		text_content = "";
 
-		/* write text_content to file */
-		write_status = write(fd, text_content, text_length);
-		if (write_status == -1)
-		{
-			close(fd);
-			return (-1);
-		}
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
+	if (fd == -1)
+		return (-1);
+
+	while (text_content[text_length])
+		text_length++;
+
+	write_status = write(fd, text_content, text_length);
+	if (write_status == -1)
+	{
+		close(fd);
+		return (-1);
 	}
 
-	/* close file descriptor */
 	close_status = close(fd);
 	if (close_status == -1)
 		return (-1);
