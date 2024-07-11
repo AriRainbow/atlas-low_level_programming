@@ -33,4 +33,10 @@ Write a function that frees a dlistint_t list. <br>
 
 Prototype: void free_dlistint(dlistint_t *head);
 
+5. Get node at index <br>
 
+Write a function that returns the nth node of a dlistint_t linked list. <br>
+
+Prototype: dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index); <br>
+where index is the index of the node, starting from 0 <br>
+if the node does not exist, return NULL
