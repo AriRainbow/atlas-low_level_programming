@@ -27,26 +27,23 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (idx == 0) /* if index is 0, add node at beginning */
 	{
 		new_node->next = *h; /* point new node to current head */
-		new_node->prev = NULL; 
+		new_node->prev = NULL;
 		if (*h != NULL)
 			(*h)->prev = new_node; /* update prev head's prev ptr */
 		*h = new_node; /* update head to new node */
 		return (new_node); /* address of new node */
 	}
-
 	/* traverse list to find position to insert new node */
-	while (current != NULL && i < idx -1)
+	while (current != NULL && i < idx - 1)
 	{
 		current = current->next; /* next node */
 		i++;
 	}
-
 	if (current == NULL) /* if reached end of list */
 	{
 		free(new_node); /* free allocated mem */
 		return (NULL);
 	}
-
 	new_node->next = current->next; /* point new node to next node */
 	new_node->prev = current; /* point new node to previous node */
 	if (current->next != NULL)
