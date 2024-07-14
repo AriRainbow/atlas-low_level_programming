@@ -28,7 +28,7 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			/* comma separator if not first element */
 			if (!first_element)
-				printf(",");
+				printf(", ");
 
 			/* print key/value pair */
 			printf("'%s': '%s'", node->key, node->value);
