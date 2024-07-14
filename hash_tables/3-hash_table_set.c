@@ -21,7 +21,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	/* generate index for the key */
-	index = key_index(( const unsigned char *)key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 
 	/* traverse linked list at index to check if key already exists */
 	current_node = ht->array[index];
